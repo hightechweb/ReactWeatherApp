@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const API_KEY = '81bad772d260c81d90edf30506e709c9';
-// http://api.openweathermap.org/data/2.5/forecast?q=Jacksonvllle,us&appid=81bad772d260c81d90edf30506e709c9
 const ROOT_URL = `http://api.openweathermap.org/data/2.5/forecast?&appid=${API_KEY}`;
 
 // Ajax request from our API
@@ -19,7 +18,6 @@ export function fetchWeather(city) {
 
   return {
     type: FETCH_WEATHER,
-    // return the promise as the payload
     payload: request
   };
 }
